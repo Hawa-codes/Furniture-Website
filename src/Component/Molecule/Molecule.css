@@ -1,26 +1,35 @@
 .navbar {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2px 70px;
-    border-bottom: 1px solid #e3dbdb;
+    padding: 0 70px;           
+    border-bottom: 1px solid #e3dbdb;  
+    height: 60px;              
 }
 
-.link {
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 20px 0;          
+    position: relative;        
+}
+
+.nav-link.active {
+    border-bottom: 3px solid #518581;  
+    color: #518581;
+    padding-bottom: 0;                  
+    margin-bottom: -1px;                
+}
+
+nav {
     display: flex;
-    flex-direction: row;
     gap: 60px;
-}
-
-.link p {
     font-size: 15px;
     font-weight: 400;
 }
 
 .icon {
     display: flex;
-    flex-direction: row;
     gap: 23px;
 }
 
