@@ -1,0 +1,41 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo p {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroSection h2 {
+    font-weight: bolder;
+    color: black;
+    font-size: 35px;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.heroSection p {
+    font-weight: 400;
+    color: #afadb5;
+    font-size: 12px;
+    white-space: pre-line;
+    text-align: center;
+}
+
