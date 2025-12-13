@@ -8,8 +8,33 @@ import WhatWeOffer from '../Component/Molecule/WhatWeOffer'
 import group4 from "../Component/Assets/Group 4.jpg"
 import group5 from "../Component/Assets/Group 5.svg"
 import group6 from "../Component/Assets/Group 4.svg"
+import Rectangle1 from '../Component/Assets/Rectangle 23.png'
+import Rectangle2 from '../Component/Assets/Rectangle 23.svg'
+import Rectangle3 from '../Component/Assets/Rectangle 23 (1).svg'
+import Rectangle4 from '../Component/Assets/Rectangle 23 (1).png'
+import ProductSlider from '../Component/Molecule/ProductSlider'
+import OurProduct2 from '../Component/Molecule/OurProduct2'
+import Pic1 from "../Component/Assets/Ellipse 1.svg"
+import Pic2 from "../Component/Assets/Ellipse 1 (1).svg"
+import Card from '../Component/Molecule/Card'
+import Article from '../Component/Molecule/Article'
 
 const LandingPage = () => {
+
+    const customer ={
+        card1: {
+            customerImage: Pic1,
+            customerName: "Jane Johnson"
+        },
+        card2: {
+            customerImage: Pic2,
+            customerName: "Thomas Johnson"
+        },
+        card3: {
+            customerImage: Pic1,
+            customerName: "Janet Johnson"
+        }
+    }
 
     const offer = {
         card1: {
@@ -32,6 +57,37 @@ const LandingPage = () => {
             description: `Pellentesque etiam blandit in tincidunt
                           at donec. Eget ipsum dignissim placerat
                           nisi, adipiscing mauris non.` 
+        }
+    }
+
+    const productItem = {
+        card1: {
+          item: "Shelf",
+          itemImage: Rectangle1,
+          itemType: "Wooden Bookshelf",
+          itemDescription: "Combination of wood and wool",
+          price: "61.25"
+        },
+        card2: {
+          item: "Chair",
+          itemImage: Rectangle2,
+          itemType: "White Aesthetic Chair",
+          itemDescription: "Combination of wood and wool",
+          price: "63.47"
+        },
+        card3: {
+          item: "Lamp",
+          itemImage: Rectangle3,
+          itemType: "Bardono Smart Lamp",
+          itemDescription: "Easy to use with bluetooth connection",
+          price: "62.23"
+        },
+        card4: {
+          item: "Sofa",
+          itemImage: Rectangle4,
+          itemType: "Sofa Empuk Banget",
+          itemDescription: "Using kapuk randu material",
+          price: "58.39"
         }
     }
 
@@ -122,8 +178,108 @@ const LandingPage = () => {
             <WhatWeOffer {...offer.card2}/>
             <WhatWeOffer {...offer.card3}/>
         </section>
+        <section>
+            <div className="words" style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                marginTop: "5rem",
+                marginBottom: "2rem"
+            }}>
+                <p style={{
+                    color: "#ffb23f",
+                    fontWeight: "600",
+                    fontSize: "20px"
+                }}>Product</p>
+                <h2 style={{
+                    fontSize: "30px",
+                    marginTop: "-1rem"
+                }}>Our popular product</h2>
+                <span style={{
+                color: "#bcb9b9ff",
+                textAlign: "center",
+                lineHeight: "30px"
+            }}>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim <br/> placerat nisi, adipiscing mauris non purus parturient.</span>
+            </div>
+            <div className="products" >
+                <ProductSlider
+                    items={[
+                        productItem.card1,
+                        productItem.card2,
+                        productItem.card3,
+                        productItem.card4,
+                        productItem.card1,
+                        productItem.card2,
+                        productItem.card4,
+                        productItem.card1,
+                        productItem.card2
+                    ]}
+                />
+            </div>
+        </section>
+        <section style={{
+            margin: "20px 52px",
+            display: "flex",
+            flexDirection: "column",
+        }}>
+            <p style={{
+                    color: "#ffb23f",
+                    fontWeight: "600",
+                    fontSize: "20px",
+                    paddingBottom: "20px",
+                }}>Our Product</p>
+            <OurProduct2/>
+        </section>
+        <section>
+            <div className="words" style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                marginTop: "5rem",
+                marginBottom: "2rem"
+            }}>
+                <p style={{
+                    color: "#ffb23f",
+                    fontWeight: "600",
+                    fontSize: "20px"
+                }}>Testimonials</p>
+                <h2 style={{
+                    fontSize: "30px",
+                    marginTop: "-1rem"
+                }}>What our customer say</h2>
+                <span style={{
+                color: "#bcb9b9ff",
+                textAlign: "center",
+                lineHeight: "30px"
+            }}>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim <br/> placerat nisi, adipiscing mauris non purus parturient.</span>
+            </div>
+            <span style={{
+                display: "flex",
+                flexDirection: "row",
+                margin: "0px 90px",
+                gap: "1rem"
+            }}>
+                <Card {...customer.card1}/>
+                <Card {...customer.card2}/>
+                <Card {...customer.card3}/>
+            </span>
+        </section>
+        <section style={{
+            margin: "20px 52px",
+            display: "flex",
+            flexDirection: "column",
+        }}>
+            <p style={{
+                    color: "#ffb23f",
+                    fontWeight: "600",
+                    fontSize: "20px",
+                    paddingBottom: "20px",
+                }}>Articles</p>
+            <Article/>
+        </section>
     </div>
-
   )
 }
 

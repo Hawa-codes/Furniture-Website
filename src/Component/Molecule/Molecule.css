@@ -77,3 +77,14 @@ nav {
     color: white;
     cursor: pointer;
 }
+
+.addition span h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+.addition span p {
+    color: #bcb9b9ff;
+    font-size: 15px;
+}
