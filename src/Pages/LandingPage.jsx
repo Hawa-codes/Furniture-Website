@@ -36,6 +36,8 @@ const LandingPage = () => {
         }
     }
 
+    const customers = Object.values(customer);
+
     const offer = {
         card1: {
            icon: group4,
@@ -59,6 +61,8 @@ const LandingPage = () => {
                           nisi, adipiscing mauris non.` 
         }
     }
+
+    const offers = Object.values(offer);
 
     const productItem = {
         card1: {
@@ -90,6 +94,7 @@ const LandingPage = () => {
           price: "58.39"
         }
     }
+
 
   return (
     <div className='landingPage'>
@@ -169,14 +174,16 @@ const LandingPage = () => {
                 color: "#bcb9b9ff",
             }}>Pellentesque etiam blandit in tincidunt at donec. Eget <br /> ipsum dignissim placerat nisi, adipiscing mauris non purus <br /> parturient.</span>
         </section>
-        <section style={{
-            display: "flex",
-            flexDirection: "row",
-            margin: "0px 90px",
-        }}>
-            <WhatWeOffer {...offer.card1}/>
-            <WhatWeOffer {...offer.card2}/>
-            <WhatWeOffer {...offer.card3}/>
+        <section
+            style={{
+                display: "flex",
+                flexDirection: "row",
+                margin: "0px 90px",
+            }}
+            >
+            {offers.map((item, index) => (
+                <WhatWeOffer key={index} {...item} />
+            ))}
         </section>
         <section>
             <div className="words" style={{
@@ -261,9 +268,9 @@ const LandingPage = () => {
                 margin: "0px 90px",
                 gap: "1rem"
             }}>
-                <Card {...customer.card1}/>
-                <Card {...customer.card2}/>
-                <Card {...customer.card3}/>
+                {customers.map((item, index) => (
+                <Card key={index} {...item} />
+            ))}
             </span>
         </section>
         <section style={{

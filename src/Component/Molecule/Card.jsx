@@ -1,6 +1,6 @@
 import React from 'react'
-import icon from "../Assets/vuesax/bold/vuesax/bold/quote-up.svg"
 import Frame from "../Assets/Frame 162681.png"
+import icon from '../Assets/quote-up.svg'
 
 const Card = (props) => {
   return (
@@ -21,7 +21,7 @@ const Card = (props) => {
         }} />
         <p style={{
             color: "#bcb9b9ff",
-            fontSize: "13px"
+            fontSize: "12px"
         }}>Pellentesque etiam blandit in tincidunt at donec. Eget <br />ipsum dignissim placerat nisi, adipiscing mauris non. </p>
         <div style={{
             display: "flex",

@@ -1,4 +1,5 @@
 import React from 'react'
+import Rectangle8 from '../Assets/Rectangle 8.png'
 
 const Article = () => {
   return (
@@ -17,6 +18,7 @@ const Article = () => {
                 color: "#bcb9b9ff",
                 lineHeight: "30px"
             }}>Pellentesque etiam blandit in tincidunt at donec. </span>
+            <img src={Rectangle8} alt="" />
       </section>  
     </div>
   )
