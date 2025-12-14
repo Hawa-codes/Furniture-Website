@@ -1,0 +1,97 @@
+.second-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10rem;
+}
+
+.third-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -9rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.benefit p {
+    color: #ffb23f;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.benefit h2 {
+    font-size: 30px;
+}
+
+.fourth-section {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 90px;
+}
+
+.words {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.words p {
+    color: #ffb23f;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.para {
+    color: #ffb23f;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.words h2 {
+    font-size: 30px;
+    margin-top: -1rem;
+}
+
+.sixth-section {
+    margin: 20px 52px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sixth-section p {
+    color: #ffb23f;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.seventh-section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.eight-section {
+    margin: 70px 52px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ninth-section {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 200px;
+    align-items: center;
+    justify-content: space-between;
+}

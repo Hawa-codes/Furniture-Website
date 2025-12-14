@@ -19,6 +19,7 @@ import Pic2 from "../Component/Assets/Ellipse 1 (1).svg"
 import Card from '../Component/Molecule/Card'
 import Article from '../Component/Molecule/Article'
 import Button1 from '../Component/Atom/Button1'
+import './Pages.css'
 
 const LandingPage = () => {
 
@@ -124,14 +125,7 @@ const LandingPage = () => {
                 }}
             />
         </section>
-        <section style={{
-            position: "relative",
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            bottom: "10rem"
-                }}>
+        <section className='second-section'>
             <div
                 style={{
                 position: "absolute",
@@ -152,63 +146,31 @@ const LandingPage = () => {
                 }}
             />
         </section>
-        <section style={{
-            display: 'flex',
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: 'space-between',
-            marginTop: "-50px",
-            marginLeft: "100px",
-            marginRight: "100px"
-        }}>
+        <section className='third-section'>
             <div className="benefit">
-                <p style={{
-                    color: "#ffb23f",
-                    fontWeight: "600",
-                    fontSize: "20px"
-                }}>Benefit</p>
-                <h2 style={{
-                    fontSize: "30px"
-                }}>Benefits when using <br />our services</h2>
+                <p>Benefit</p>
+                <h2>Benefits when using <br />our services</h2>
             </div>
             <span style={{
                 color: "#bcb9b9ff",
             }}>Pellentesque etiam blandit in tincidunt at donec. Eget <br /> ipsum dignissim placerat nisi, adipiscing mauris non purus <br /> parturient.</span>
         </section>
-        <section
-            style={{
-                display: "flex",
-                flexDirection: "row",
-                margin: "0px 90px",
-            }}
-            >
+        <section className='fourth-section'>
             {offers.map((item, index) => (
                 <WhatWeOffer key={index} {...item} />
             ))}
         </section>
-        <section>
-            <div className="words" style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
-                marginTop: "5rem",
-                marginBottom: "2rem"
-            }}>
-                <p style={{
-                    color: "#ffb23f",
-                    fontWeight: "600",
-                    fontSize: "20px"
-                }}>Product</p>
-                <h2 style={{
-                    fontSize: "30px",
-                    marginTop: "-1rem"
-                }}>Our popular product</h2>
+        <section className='fifth-section'>
+            <div className="words">
+                <p>Product</p>
+                <h2>Our popular product</h2>
                 <span style={{
                 color: "#bcb9b9ff",
                 textAlign: "center",
                 lineHeight: "30px"
-            }}>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim <br/> placerat nisi, adipiscing mauris non purus parturient.</span>
+                }}>
+                    Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim <br/> placerat nisi, adipiscing mauris non purus parturient.
+                </span>
             </div>
             <div className="products" >
                 <ProductSlider
@@ -226,37 +188,14 @@ const LandingPage = () => {
                 />
             </div>
         </section>
-        <section style={{
-            margin: "20px 52px",
-            display: "flex",
-            flexDirection: "column",
-        }}>
-            <p style={{
-                    color: "#ffb23f",
-                    fontWeight: "600",
-                    fontSize: "20px",
-                    paddingBottom: "20px",
-                }}>Our Product</p>
+        <section className='sixth-section'>
+            <p>Our Product</p>
             <OurProduct2/>
         </section>
-        <section>
-            <div className="words" style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
-                marginTop: "5rem",
-                marginBottom: "2rem"
-            }}>
-                <p style={{
-                    color: "#ffb23f",
-                    fontWeight: "600",
-                    fontSize: "20px"
-                }}>Testimonials</p>
-                <h2 style={{
-                    fontSize: "30px",
-                    marginTop: "-1rem"
-                }}>What our customer say</h2>
+        <section className='seventh-section'>
+            <div className="words">
+                <p>Testimonials</p>
+                <h2>What our customer say</h2>
                 <span style={{
                 color: "#bcb9b9ff",
                 textAlign: "center",
@@ -274,28 +213,13 @@ const LandingPage = () => {
             ))}
             </span>
         </section>
-        <section style={{
-            margin: "70px 52px",
-            display: "flex",
-            flexDirection: "column",
-        }}>
-            <p style={{
-                    color: "#ffb23f",
-                    fontWeight: "600",
-                    fontSize: "20px",
-                    paddingBottom: "15px"
-                }}>Articles</p>
+        <section className='eight-section'>
+            <p className='para'>Articles</p>
             <Article/>
         </section>
-        <section style={{
-            display: "flex",
-            flexDirection: "row",
-            margin: "auto 100px",
-            alignItems: "center",
-            justifyContent: "space-between"
-        }}>
+        <section className='ninth-section'>
             <h2>Join with me to get special discount</h2>
-            <Button1 word ={"Learn More "}/>
+            <Button1 word ={"Learn More ->"}/>
         </section>
     </div>
   )
