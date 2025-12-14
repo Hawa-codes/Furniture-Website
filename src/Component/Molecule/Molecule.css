@@ -88,3 +88,19 @@ nav {
     color: #bcb9b9ff;
     font-size: 15px;
 }
+
+.context {
+    position: absolute;
+    bottom: -225rem;
+    text-align: left;
+    padding: 26px;
+    color: white;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -1rem;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import unsplash from '../Assets/unsplash_mpN7xjKQ_Ns.svg'
 import unsplash2 from '../Assets/unsplash_376KN_ISplE.svg'
 import './Molecule.css'
+import Button1 from '../Atom/Button1'
 
 const OurProduct2 = () => {
   return (
@@ -27,14 +28,7 @@ const OurProduct2 = () => {
                 color: "#bcb9b9ff",
                 lineHeight: "30px"
             }}>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum <br />dignissim placerat nisi, adipiscing mauris non purus parturient. <br /> morbi fermentum, vivamus et accumsan dui tincidunt pulvinar</span>
-            <button style={{
-                width: "170px",
-                height: "54px",
-                color: "white",
-                backgroundColor: "#518581",
-                border: "none",
-                marginTop: "3rem"
-            }}>Learn More</button>
+            <Button1 word = {"Learn More"}/>
             <img src={unsplash} alt="unsplash" style={{
                 width: "595px",
                 height: "260px",

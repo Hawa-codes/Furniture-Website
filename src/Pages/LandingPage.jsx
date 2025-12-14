@@ -18,6 +18,7 @@ import Pic1 from "../Component/Assets/Ellipse 1.svg"
 import Pic2 from "../Component/Assets/Ellipse 1 (1).svg"
 import Card from '../Component/Molecule/Card'
 import Article from '../Component/Molecule/Article'
+import Button1 from '../Component/Atom/Button1'
 
 const LandingPage = () => {
 
@@ -274,7 +275,7 @@ const LandingPage = () => {
             </span>
         </section>
         <section style={{
-            margin: "20px 52px",
+            margin: "70px 52px",
             display: "flex",
             flexDirection: "column",
         }}>
@@ -282,9 +283,19 @@ const LandingPage = () => {
                     color: "#ffb23f",
                     fontWeight: "600",
                     fontSize: "20px",
-                    paddingBottom: "20px",
+                    paddingBottom: "15px"
                 }}>Articles</p>
             <Article/>
+        </section>
+        <section style={{
+            display: "flex",
+            flexDirection: "row",
+            margin: "auto 100px",
+            alignItems: "center",
+            justifyContent: "space-between"
+        }}>
+            <h2>Join with me to get special discount</h2>
+            <Button1 word ={"Learn More "}/>
         </section>
     </div>
   )
