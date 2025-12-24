@@ -95,3 +95,17 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.search-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.Card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 6px; 
+    padding: 40px 40px;
+}
+

@@ -2,14 +2,14 @@ import React from 'react'
 import './Molecule.css'
 import search_icon from '../Assets/search-normal.svg'
 
-const Searchbnt = (props) => {
+const Searchbnt = ({ btnName, className }) => {
   return (
     <div className='inputs'>
         <span className='input'>
             <img src={search_icon} alt="search-icon" />
             <input type="text" placeholder='Search property'/>
         </span>
-        <button>{props.btnName}</button>
+        <button>{btnName}</button>
     </div>
   )
 }

@@ -9,12 +9,10 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
     <Navbar/>
-        <Routes>
-
-            <Route path="/" element={<LandingPage />}>
-            <Route path='/furniturewebsite/src/Pages/ProductPage.jsx' element={<ProductPage />}/>
-            </Route>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/products" element={<ProductPage />} />
+      </Routes>
         <Footer/>
     </BrowserRouter>
   )

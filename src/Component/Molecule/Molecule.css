@@ -121,3 +121,45 @@ nav {
     align-items: row;
     gap: 3rem;
 }
+
+.product2 {
+    margin: 2rem 0;
+}
+
+.product2 img {
+    position: relative;
+    object-fit: cover;
+    filter: brightness(50%);
+    width: 100%;
+}
+
+
+.product2 span {
+    position: absolute;
+    bottom: -5rem;
+    left: 3rem;
+    text-align: left;
+    /* padding: 26px; */
+    color: white;
+}
+
+.product2-btn {
+    background: #518581;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 93px;
+    height: 41px;
+}
+.product2 h4 {
+    font-size: 44px;
+}
+
+.product2 p {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.product-search-btn {
+    margin: auto 100px;
+}

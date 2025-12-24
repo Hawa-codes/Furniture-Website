@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return */
 import React from 'react'
 import Logo from '../Atom/Logo'
 import bag_icon from '../Assets/bag-2.svg'
@@ -14,7 +13,7 @@ const Navbar = () => {
        <Logo />
       <nav>
         <NavLink 
-          to="/product" 
+          to="/products" 
           className="nav-link"
         >
           Product

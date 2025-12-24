@@ -2,9 +2,7 @@ import React from 'react'
 
 const OurProduct = (props) => {
   return (
-    <div className='our-product' style={{
-        // margin: "5px 10px",
-    }}>
+    <div className='our-product'>
         <img src={props.itemImage} alt="Item-Image" style={{
             width: "394px",
             height: '360px'
