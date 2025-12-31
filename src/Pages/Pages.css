@@ -109,3 +109,22 @@
     padding: 40px 40px;
 }
 
+.Services {
+    padding: 0 100px; 
+    box-sizing: border-box; 
+}
+
+.Service-img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%;
+}
+
+.ServiceCardsContainer {
+  display: flex;           /* make it a flex container */
+  flex-wrap: wrap;         /* allow wrapping to next line */
+  gap: 10px;               /* space between cards */
+  justify-content: center; /* center cards horizontally */
+}
+
+

@@ -4,6 +4,7 @@ import Navbar from '../Molecule/Navbar';
 import LandingPage from '../../Pages/LandingPage';
 import Footer from '../Molecule/Footer';
 import ProductPage from '../../Pages/ProductPage'
+import Services from '../../Pages/Services';
 
 const AppRouter = () => {
   return (
@@ -12,6 +13,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/products" element={<ProductPage />} />
+        <Route path='/services' element={<Services/>}/>
       </Routes>
         <Footer/>
     </BrowserRouter>

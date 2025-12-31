@@ -84,3 +84,38 @@ export const productItem = [
               id: 9
             },
           ]
+
+
+export const servicesDetails = [
+  {
+    number: 1,
+    title: "Furniture",
+    desc: "At the ultimate smart home, you're met with technology before you even step through the front door. ",
+  },
+  {
+    number: 2,
+    title: "Home Decoration",
+    desc: "Create A Calming Summer Escape With Our Luxurious Home Accessories For The Balmy Evenings.",
+  },
+  {
+    number: 3,
+    title: "Kitchen Cabinet",
+    desc: "Introducing the modular kitchen cabinet system. Start with our huge selection of base and wall cabinets. ",
+  },
+  {
+    number: 4,
+    title: "Interior Design",
+    desc: "Innovative products often feature innovative designs that play with the patterns we are familiar.",
+  },
+  {
+    number: 5,
+    title: "Exterior Design",
+    desc: "These stylish and resilient products provide up-to-date options for roofing, siding, decking, and outdoor spaces.",
+  },
+  {
+    number: 6,
+    title: "Custom Furniture",
+    desc: "With Quality Materials and Modern Designs, we have Designs for all Tastes. we bring you World Class Designs.",
+  },
+];
+

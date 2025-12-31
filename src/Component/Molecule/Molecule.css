@@ -163,3 +163,52 @@ nav {
 .product-search-btn {
     margin: auto 100px;
 }
+
+.Total-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 30px;
+}
+
+.Total-product span {
+    display: flex;
+    flex-direction: row;
+}
+
+.Total-product span p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Total-product span img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 30px;
+}
+
+.firsts {
+    font-size: 64px;
+    font-weight: 700;
+    color: #518581;
+}
+
+.seconds {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+.thirds {
+    font-size: 18px;
+    font-weight: 500;
+    color: #AFADB5;
+}
+
+.ServiceCard {
+  flex: 0 1 calc(33.33% - 20px); /* width = 1/3 of container minus gap */
+  box-sizing: border-box;        /* include padding/border in width */
+  padding: 10px;                 /* optional spacing inside card */
+  text-align: left;             /* center text */
+}

@@ -2,18 +2,13 @@ import React from 'react'
 import HeroSection from '../Component/Atom/HeroSection'
 import Product2 from '../Component/Molecule/Product2'
 import Searchbnt from '../Component/Molecule/Searchbnt'
-
 import OurProduct from '../Component/Molecule/OurProduct'
 import './Pages.css'
 import { productItem } from '../data'
+import TotalProduct from '../Component/Molecule/TotalProduct'
 
 
 const ProductPage = () => {
-
-    
-        // const productItems = Object.values(productItem);
-
-
 
   return (
     <div className='productPage'>
@@ -24,6 +19,9 @@ const ProductPage = () => {
         <Product2/>
         <div className="search-btn-wrapper">
             <Searchbnt btnName="Find Now" className="product-search" />
+        </div>
+        <div>
+          <TotalProduct/>
         </div>
         <section className='Card-section'>
             {productItem.map((item, index) => (
